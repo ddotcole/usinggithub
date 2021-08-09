@@ -14,7 +14,7 @@ This repository is a place for describing the process I use to initalize SSH to 
 
     ```ssh-keygen -t ed25519 -C <email address>```
     
-3. Follow all information requested by ssh-keygen.  Once complete, check for a **config** file in **~/.ssh**.  If the **config** does not exist, create a new text file and insert the following information:
+3. Follow all information requested by **ssh-keygen**.  Once complete, check for a **config** file in **~/.ssh**.  If the **config** does not exist, create a new text file and insert the following information:
 ```
     Host git@github.com
       AddKeysToAgent yes
