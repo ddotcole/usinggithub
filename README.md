@@ -19,11 +19,11 @@ This repository is a place for describing the process I use to initalize SSH to 
   ```
     
 3. Follow all information requested by **ssh-keygen**.  Once complete, check for a **config** file in **~/.ssh**.  If the **config** does not exist, create a new text file and insert the following information:
-```
+  ```
   Host git@github.com
     AddKeysToAgent yes
     IdentityFile ~/.ssh/<key file name>
-```    
+  ```    
       
 4. Run the following command, copying the output to the clipboard:
 
