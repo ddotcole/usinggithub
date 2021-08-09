@@ -2,7 +2,7 @@
 
 ### About
 
-This repository is a place for describing the process I use to initalize a SSH to Github on my computer as well as basic commands used in my normal work flow.
+This repository is a place for describing the process I use to initalize SSH to Github on my computer as well as basic commands used in my normal work flow.
 
 ### Setting up a SSH Connection
 
