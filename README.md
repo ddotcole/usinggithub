@@ -8,22 +8,28 @@ This repository is a place for describing the process I use to initalize SSH to 
 
 1. Bring up a console and navigate to:
 
-    ```cd ~/.ssh```
+  ```
+  cd ~/.ssh
+  ```
 
 2. Type in the following command to generate a SSH key pair:
 
-    ```ssh-keygen -t ed25519 -C <email address>```
+  ```
+  ssh-keygen -t ed25519 -C <email address>
+  ```
     
 3. Follow all information requested by **ssh-keygen**.  Once complete, check for a **config** file in **~/.ssh**.  If the **config** does not exist, create a new text file and insert the following information:
 ```
-    Host git@github.com
-      AddKeysToAgent yes
-      IdentityFile ~/.ssh/<key file name>
-```
+  Host git@github.com
+    AddKeysToAgent yes
+    IdentityFile ~/.ssh/<key file name>
+```    
       
 4. Run the following command, copying the output to the clipboard:
 
-    ```cat <key file name>.pub```
+  ```
+  cat <key file name>.pub
+  ```
     
 5. This is your public key which must be added to Github using the following process:
 
@@ -34,8 +40,12 @@ This repository is a place for describing the process I use to initalize SSH to 
 
 6. Now you can test your SSH connection to Github using the following command:
 
-    ```ssh -T git@github.com```
+  ```
+  ssh -T git@github.com
+  ```
 
 7. Everything is working fine if you end up with a response like this:
 
-    ```Hi <user>! You've successfully authenticated, but GitHub does not provide shell access.```
+  ```
+  Hi <user>! You've successfully authenticated, but GitHub does not provide shell access.
+  ```
