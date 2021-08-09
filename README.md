@@ -17,7 +17,7 @@ Type in the following command to generate a SSH key pair:
 Follow all information requested by ssh-keygen.  Once complete, check for a **config** file in **~/.ssh**.  If the **config** does not exist, create a new text file and insert the following information:
 
     Host git@github.com
-      AddKeysToAgent yes
+      AddKebold codeysToAgent yes
       IdentityFile ~/.ssh/<key file name>
       
 Run the following command, copying the output to the clipboard:
@@ -26,7 +26,15 @@ Run the following command, copying the output to the clipboard:
     
 This is your public key which must be added to Github using the following process:
 
-    1. Click on **User** in upper right corner of Github and choose Settings
-    2. Click SSH and GPG Keys section on the left hand side
-    3. Click New SSH key pasting the previously copied key into the Key section
-    4. Provide the key with a title and click Add SSH key
+   * Click on **User** in upper right corner of Github and choose **Settings**
+   * Click **SSH and GPG Keys** section on the left hand side
+   * Click **New SSH key** pasting the previously copied key into the **Key** section
+   * Provide the key with a **Title** and click **Add SSH key**
+
+Now you can test your SSH connection to Github using the following command:
+
+    ssh -T git@github.com
+
+Everything is working fine if you end up with a response like this:
+
+    Hi <user>! You've successfully authenticated, but GitHub does not provide shell access.
